@@ -128,7 +128,7 @@ def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
 
 # Function to encrypt data
-def encrypt_data(text):
+def encrypt_data(text, passkey):
     return st.session_state.cipher.encrypt(text.encode()).decode()
 
 # Function to decrypt data
